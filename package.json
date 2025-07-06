@@ -1,0 +1,20 @@
+{
+  "name": "gamified-samvidhan",
+  "version": "1.0.0",
+  "description": "A gamified learning platform for the Indian Constitution",
+  "scripts": {
+    "client": "cd client && npm start",
+    "server": "cd server && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1"
+  },
+  "dependencies": {
+    "firebase": "^11.6.1",
+    "i18next": "^25.0.2",
+    "i18next-browser-languagedetector": "^8.0.5",
+    "react-i18next": "^15.5.1"
+  }
+}

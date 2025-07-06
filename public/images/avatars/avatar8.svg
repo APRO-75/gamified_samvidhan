@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @keyframes antennaBeep {
+      0%, 100% { transform: scale(1); fill: #FF0000; }
+      50% { transform: scale(1.2); fill: #FF6666; }
+    }
+    @keyframes screenGlow {
+      0%, 100% { fill: #4CAF50; }
+      50% { fill: #81C784; }
+    }
+    .antenna-light { animation: antennaBeep 1.5s infinite; }
+    .screen { animation: screenGlow 3s infinite; }
+  </style>
+  
+  <!-- Robot head -->
+  <rect x="25" y="20" width="50" height="60" rx="5" fill="#A9A9A9"/>
+  <rect x="20" y="30" width="60" height="45" rx="3" fill="#808080"/>
+  
+  <!-- Antenna -->
+  <line x1="50" y1="20" x2="50" y2="10" stroke="#666" stroke-width="3"/>
+  <circle class="antenna-light" cx="50" cy="8" r="3"/>
+  
+  <!-- Screen/Face -->
+  <rect class="screen" x="30" y="35" width="40" height="25" rx="2"/>
+  
+  <!-- Control panels -->
+  <rect x="25" y="65" width="15" height="8" rx="1" fill="#666"/>
+  <rect x="60" y="65" width="15" height="8" rx="1" fill="#666"/>
+  
+  <!-- Buttons -->
+  <circle cx="30" cy="69" r="2" fill="#FF0000"/>
+  <circle cx="38" cy="69" r="2" fill="#00FF00"/>
+  <circle cx="65" cy="69" r="2" fill="#0000FF"/>
+  <circle cx="73" cy="69" r="2" fill="#FFFF00"/>
+  
+  <!-- Display text -->
+  <text x="35" y="50" font-family="monospace" font-size="8" fill="#111">HELLO</text>
+</svg> 
